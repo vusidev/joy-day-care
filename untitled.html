@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta>
+    <title>
+        Skewed Background using HTML and CSS
+    </title>
+          
+          <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: serif;
+    }
+      
+    section:hover {
+          background: linear-gradient( green , yellow);
+    }
+      
+    section {
+        display: flex;
+        background: green;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        transform: skew(0deg, -10deg) translateY(-120px);
+    }
+      
+    .content {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        max-width: 900px;
+        transform: skew(0deg, 10deg);
+        text-align: center;
+    }
+      
+    .content h2 {
+        color: #fff;
+        font-size: 80px;
+    }
+</style>
+          
+          
+</head>
+  
+<body>
+    <section>
+        <div class="content">
+            <h2>GeeksforGeeks</h2>
+        </div>
+    </section>
+  
+</body>
+  
+</html>  
